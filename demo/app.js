@@ -9,6 +9,9 @@ app.post("/btn1", order.order);
 app.get("/allFoodName", order.getALLFileName);
 app.get("/orderFood/:phoneNum", order.showOrder);
 
+
+console.log("test");
+
 app.use(express.static("public"));
 
 app.listen(3000);
