@@ -1,0 +1,41 @@
+<!-- POST、GET前端測試 -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> <%=  phoneNum%> 號碼的訂單 DAFAULT</title>
+        <style type="text/css">
+            .box{
+                width:800px;
+                height:400px;
+                border:1px solid #000;
+                margin: 0 auto;
+                background:-webkit-linear-gradient(top, skyblue, white)
+            }
+            h1{
+                text-align: center;
+            }
+            input{
+                font-size:20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <h1>訂單</h1>
+            <% if(!cando){ %>
+                <p>
+                    查無<%= phoneNum%>
+                </p>     
+            <% }else{%>
+                <p>
+                    <%= phoneNum%> 點菜如下：
+                </p>
+                <p>
+                     <%= food%>
+                 </p>
+            <% }%>
+        </p>
+        </div>        
+    </body>
+</html>

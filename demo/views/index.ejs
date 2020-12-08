@@ -1,0 +1,66 @@
+<!-- POST、GET前端測試 -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>DAFAULT</title>
+        <style type="text/css">
+            .box{
+                width:800px;
+                height:400px;
+                border:1px solid #000;
+                margin: 0 auto;
+                background:-webkit-linear-gradient(top, skyblue, white)
+            }
+            h1{
+                text-align: center;
+            }
+            input{
+                font-size:20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <h1>訂餐</h1>
+            <h1> 
+                <a href="/allFoodName">顯示訂餐</a>
+            </h1>
+            <p>請輸入手機號碼：</p>
+            <P>
+                <input type="text" name="phone" />
+            </P>
+            <P>
+                吃甚麼：
+            </P>
+            <P>
+                <input type="text" name="foodName" />
+            </P>
+
+            <P>
+                <input type="button" value="確認" id="btn1">
+            </P>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+        <!-- <script type="text/javascript" src="jquery.min.js"></script> -->
+        <script type="text/javascript" >
+            $("#btn1").click(function(){
+                var phone = $("input[name=phone]").val();
+                var foodName = $("input[name=foodName]").val();
+
+                $.post("/btn1",{
+                    phone : phone,
+                    foodName : foodName
+                }, function(data){
+                    if(data == "1"){
+                        alert("寫入成功")
+                    }else{
+                        alert("回寫失敗")
+                    }
+                });
+            });
+        </script>
+        
+    </body>
+</html>
