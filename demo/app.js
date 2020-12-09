@@ -14,6 +14,8 @@ console.log("test");
 console.log("1********");
 console.log("RUI 2-1*************");
 
+console.log("RUI 2-2*************");
+
 app.use(express.static("public"));
 
 app.listen(3000);
