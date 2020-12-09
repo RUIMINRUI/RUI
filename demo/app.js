@@ -12,7 +12,7 @@ app.get("/orderFood/:phoneNum", order.showOrder);
 
 console.log("test");
 console.log("1********");
-console.log("2********");
+console.log("RUI 2-1*************");
 
 app.use(express.static("public"));
 
