@@ -11,6 +11,7 @@ app.get("/orderFood/:phoneNum", order.showOrder);
 
 
 console.log("test");
+console.log("1********");
 
 app.use(express.static("public"));
 
