@@ -23,6 +23,9 @@ console.log("RUI 2-3*************");
 
 console.log("RUI 2-4*************");
 
+console.log("HOU 1-1*************");
+console.log("HOU 1-2*************");
+
 app.use(express.static("public"));
 
 app.listen(3000);
