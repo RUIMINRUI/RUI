@@ -13,6 +13,7 @@ app.get("/orderFood/:phoneNum", order.showOrder);
 console.log("test");
 console.log("RUI 1********");
 console.log("RUI 1-1********");
+console.log("RUI 1-2********");
 
 console.log("RUI 2-1*************");
 
