@@ -22,7 +22,6 @@ console.log("RUI 2-2*************");
 console.log("RUI 2-3*************");
 
 console.log("MIN 1-1*************");
-console.log("MIN 1-2*************");
 
 app.use(express.static("public"));
 
